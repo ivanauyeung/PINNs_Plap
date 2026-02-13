@@ -3,7 +3,7 @@
 #### Docker Container
 
 The recommended PhysicsNeMo Docker image can be pulled from the NVIDIA Container Registry
-`sudo pull nvcr.io/nvidia/physicsnemo/physicsnemo:25.06`
+`sudo docker pull nvcr.io/nvidia/physicsnemo/physicsnemo:25.06`
 
 and to run the container, run:
 `sudo docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864  -p 8888:8888 -it --rm nvcr.io/nvidia/physicsnemo/physicsnemo:25.06 bash`
